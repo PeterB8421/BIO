@@ -23,9 +23,7 @@ def main():
         exit(1)
     src_file = sys.argv[1]
     target_file = sys.argv[2]
-    response = verify.verify(src_file, target_file, options={
-        "face_plugins": "landmarks",
-    })
+    response = verify.verify(src_file, target_file)
     print(response)
 
 

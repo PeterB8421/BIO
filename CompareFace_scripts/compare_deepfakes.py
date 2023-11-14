@@ -26,15 +26,16 @@ def create_json_directories(directory):
 def main():
     if len(sys.argv) != 2:
         print('Usage: python compare_results.py <dir>\n'
-              '<dir> = Directory containing subdirectories with files ending as "_result.jpg"', file=sys.stderr)
+              '<dir> = Directory containing subdirectories with files ending as "_deepfake.jpg"', file=sys.stderr)
         exit(1)
     path = sys.argv[1]
     json_dirs = glob.glob(os.path.join(path, '*/json'))
     if not json_dirs:
         create_json_directories(path)
-    files = glob.glob(os.path.join(path, '*/*_result.jpg'))
+    files = glob.glob(os.path.join(path, '*/*_deepfake.jpg'))
+    refs = glob.glob(os.path.join(path, '*/*_ref.jpg'))
     results = []
-    for src in files:
+    for src in refs:
         prefix = re.search(r'\\(\d+)\\', src)
         prefix = prefix.group(1)
         for target in files:
@@ -47,6 +48,7 @@ def main():
             current = verify.verify(src, target)
             current['src'] = src
             current['target'] = target
+            current['category'] = re.search(r'_([^\.]+)\.jpg$', target)
             results.append(current)
         filename = os.path.basename(src)
         json_path = os.path.join(path, prefix, 'json', f'{filename.replace(".jpg", ".json")}')
