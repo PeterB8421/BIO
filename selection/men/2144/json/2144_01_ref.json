@@ -14,19 +14,19 @@
         "face_matches": [
           {
             "box": {
-              "probability": 0.93988,
-              "x_max": 865,
-              "y_max": 971,
-              "x_min": 153,
-              "y_min": 193
+              "probability": 0.9997,
+              "x_max": 1120,
+              "y_max": 1260,
+              "x_min": 325,
+              "y_min": 332
             },
-            "similarity": 0.95626
+            "similarity": 0.4922
           }
         ]
       }
     ],
     "src": "..\\selection\\men\\2144\\2144_01_ref.jpg",
-    "target": "..\\selection\\men\\2144\\2144_02_obscure.jpg"
+    "target": "..\\selection\\men\\2144\\2144_02_obscure_result.jpg"
   },
   {
     "result": [
@@ -43,18 +43,47 @@
         "face_matches": [
           {
             "box": {
-              "probability": 0.99746,
-              "x_max": 803,
-              "y_max": 918,
-              "x_min": 204,
-              "y_min": 268
+              "probability": 0.99805,
+              "x_max": 1129,
+              "y_max": 1244,
+              "x_min": 335,
+              "y_min": 365
             },
-            "similarity": 0.97518
+            "similarity": 0.45051
           }
         ]
       }
     ],
     "src": "..\\selection\\men\\2144\\2144_01_ref.jpg",
-    "target": "..\\selection\\men\\2144\\2144_03_obscure.jpg"
+    "target": "..\\selection\\men\\2144\\2144_03_obscure_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99923,
+            "x_max": 876,
+            "y_max": 988,
+            "x_min": 148,
+            "y_min": 96
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99998,
+              "x_max": 1122,
+              "y_max": 1251,
+              "x_min": 325,
+              "y_min": 302
+            },
+            "similarity": 0.97198
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\2144\\2144_01_ref.jpg",
+    "target": "..\\selection\\men\\2144\\2144_01_ref_result.jpg"
   }
 ]

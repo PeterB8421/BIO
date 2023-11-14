@@ -32,16 +32,17 @@ def main():
     json_dirs = glob.glob(os.path.join(path, '*/json'))
     if not json_dirs:
         create_json_directories(path)
-    pattern_obscure = os.path.join(path, '*/*_obscure.jpg')
-    pattern_glasses = os.path.join(path, '*/*_glasses.jpg')
-    pattern_hair = os.path.join(path, '*/*_hair.jpg')
+    pattern_obscure = os.path.join(path, '*/*_obscure_result.jpg')
+    pattern_glasses = os.path.join(path, '*/*_glasses_result.jpg')
+    pattern_hair = os.path.join(path, '*/*_hair_result.jpg')
+    pattern_ref = os.path.join(path, '*/*_ref_result.jpg')
 
-    # Use glob.glob to get the list of file paths for each pattern
     matching_files_obscure = glob.glob(pattern_obscure)
     matching_files_glasses = glob.glob(pattern_glasses)
     matching_files_hair = glob.glob(pattern_hair)
+    matching_files_ref = glob.glob(pattern_ref)
 
-    files = matching_files_obscure + matching_files_glasses + matching_files_hair
+    files = matching_files_obscure + matching_files_glasses + matching_files_hair + matching_files_ref
 
     refs = glob.glob(os.path.join(path, '*/*_ref.jpg'))
     results = []
