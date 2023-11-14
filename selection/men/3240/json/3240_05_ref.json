@@ -1,0 +1,60 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99979,
+            "x_max": 920,
+            "y_max": 1024,
+            "x_min": 128,
+            "y_min": 147
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99982,
+              "x_max": 934,
+              "y_max": 1001,
+              "x_min": 97,
+              "y_min": 166
+            },
+            "similarity": 0.3996
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\3240\\3240_05_ref.jpg",
+    "target": "..\\selection\\men\\3240\\3240_01_glasses.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99979,
+            "x_max": 920,
+            "y_max": 1024,
+            "x_min": 128,
+            "y_min": 147
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.9969,
+              "x_max": 864,
+              "y_max": 993,
+              "x_min": 128,
+              "y_min": 128
+            },
+            "similarity": 0.68755
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\3240\\3240_05_ref.jpg",
+    "target": "..\\selection\\men\\3240\\3240_08_glasses.jpg"
+  }
+]

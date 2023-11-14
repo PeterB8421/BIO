@@ -1,0 +1,60 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99972,
+            "x_max": 900,
+            "y_max": 1001,
+            "x_min": 120,
+            "y_min": 92
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.96125,
+              "x_max": 966,
+              "y_max": 1024,
+              "x_min": 140,
+              "y_min": 126
+            },
+            "similarity": 0.82559
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\2926\\2926_05_ref.jpg",
+    "target": "..\\selection\\men\\2926\\2926_02_obscure.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99972,
+            "x_max": 900,
+            "y_max": 1001,
+            "x_min": 120,
+            "y_min": 92
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99994,
+              "x_max": 864,
+              "y_max": 958,
+              "x_min": 126,
+              "y_min": 155
+            },
+            "similarity": 0.4354
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\2926\\2926_05_ref.jpg",
+    "target": "..\\selection\\men\\2926\\2926_04_glasses.jpg"
+  }
+]

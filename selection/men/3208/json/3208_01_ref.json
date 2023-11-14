@@ -1,0 +1,31 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99892,
+            "x_max": 907,
+            "y_max": 1000,
+            "x_min": 112,
+            "y_min": 116
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99997,
+              "x_max": 894,
+              "y_max": 995,
+              "x_min": 118,
+              "y_min": 126
+            },
+            "similarity": 0.99903
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\3208\\3208_01_ref.jpg",
+    "target": "..\\selection\\men\\3208\\3208_05_glasses.jpg"
+  }
+]

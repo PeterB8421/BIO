@@ -1,0 +1,31 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99999,
+            "x_max": 979,
+            "y_max": 1024,
+            "x_min": 172,
+            "y_min": 110
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.92964,
+              "x_max": 467,
+              "y_max": 556,
+              "x_min": 320,
+              "y_min": 432
+            },
+            "similarity": 0.05726
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\3006\\3006_02_ref.jpg",
+    "target": "..\\selection\\men\\3006\\3006_03_obscure.jpg"
+  }
+]

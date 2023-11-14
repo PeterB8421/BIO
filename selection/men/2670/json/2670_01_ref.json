@@ -1,0 +1,60 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99888,
+            "x_max": 888,
+            "y_max": 1022,
+            "x_min": 116,
+            "y_min": 182
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99864,
+              "x_max": 915,
+              "y_max": 993,
+              "x_min": 177,
+              "y_min": 171
+            },
+            "similarity": 0.7404
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\2670\\2670_01_ref.jpg",
+    "target": "..\\selection\\men\\2670\\2670_02_obscure.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99888,
+            "x_max": 888,
+            "y_max": 1022,
+            "x_min": 116,
+            "y_min": 182
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99988,
+              "x_max": 854,
+              "y_max": 1019,
+              "x_min": 105,
+              "y_min": 121
+            },
+            "similarity": 0.90502
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\2670\\2670_01_ref.jpg",
+    "target": "..\\selection\\men\\2670\\2670_05_hair.jpg"
+  }
+]
