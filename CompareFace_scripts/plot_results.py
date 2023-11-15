@@ -27,7 +27,7 @@ def main():
                     'src'       : item['src'],
                     'target'    : item['target'],
                     'similarity': item['result'][0]['face_matches'][0]['similarity'],
-                    'category': os.path.basename(item['target']).split('_')[2].replace('.jpg', '')
+                    'category': os.path.basename(item['target']).split('_')[2].replace('.jpg', '').lower()
                 }
                 for item in data
             ]
