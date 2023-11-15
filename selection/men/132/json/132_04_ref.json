@@ -14,47 +14,18 @@
         "face_matches": [
           {
             "box": {
-              "probability": 0.99985,
-              "x_max": 1143,
-              "y_max": 1270,
-              "x_min": 323,
-              "y_min": 307
+              "probability": 0.99967,
+              "x_max": 934,
+              "y_max": 1003,
+              "x_min": 108,
+              "y_min": 113
             },
-            "similarity": 0.96613
+            "similarity": 0.99358
           }
         ]
       }
     ],
     "src": "..\\selection\\men\\132\\132_04_ref.jpg",
-    "target": "..\\selection\\men\\132\\132_05_obscure_result.jpg"
-  },
-  {
-    "result": [
-      {
-        "source_image_face": {
-          "box": {
-            "probability": 0.99895,
-            "x_max": 896,
-            "y_max": 993,
-            "x_min": 140,
-            "y_min": 140
-          }
-        },
-        "face_matches": [
-          {
-            "box": {
-              "probability": 0.99993,
-              "x_max": 1108,
-              "y_max": 1258,
-              "x_min": 346,
-              "y_min": 351
-            },
-            "similarity": 0.98519
-          }
-        ]
-      }
-    ],
-    "src": "..\\selection\\men\\132\\132_04_ref.jpg",
-    "target": "..\\selection\\men\\132\\132_04_ref_result.jpg"
+    "target": "..\\selection\\men\\132\\132_05_obscure.jpg"
   }
 ]
