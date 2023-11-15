@@ -9,9 +9,12 @@ import seaborn as sns
 
 
 def main():
-    if len(sys.argv) != 2 and len(sys.argv) != 3:
-        print('Usage: python plot_results.py <dir>\n'
-              '<dir> = Directory containing dataset with json subdirectories', file=sys.stderr)
+    # sys.argv [0] = Script pathname, [1] = path, [2] = output filename, [3] = graph title
+    if len(sys.argv) != 4:
+        print('Usage: python plot_results.py <dir> <name> <label>\n'
+              '<dir> = Directory containing dataset with json subdirectories\n'
+              '<name> = Name of the output file with its extension.\n'
+              '<label> = Label for the graph.', file=sys.stderr)
         exit(1)
     path = sys.argv[1]
     results_json = glob.glob(os.path.join(path, '*/json/*.json'))
@@ -31,13 +34,10 @@ def main():
             df = pd.DataFrame(result_data)
             dfs.append(df)
     result_df = pd.concat(dfs, ignore_index=True)
-    print(result_df['similarity'], result_df['src'], result_df['target'])
     sns.boxplot(result_df, x='category', y='similarity')
-    name = 'graph.png'
-    if len(sys.argv) == 3:
-        name = sys.argv[2]
-    plt.savefig(name)
-    plt.show()
+    plt.ylim(bottom=0)
+    plt.gca().set_title(sys.argv[3])
+    plt.savefig(sys.argv[2])
 
 
 if __name__ == '__main__':

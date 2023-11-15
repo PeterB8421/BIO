@@ -24,25 +24,41 @@ def create_json_directories(directory):
 
 
 def main():
-    if len(sys.argv) != 2:
-        print('Usage: python compare_results.py <dir>\n'
-              '<dir> = Directory containing subdirectories with files ending as "_deepfake.jpg"', file=sys.stderr)
+    if len(sys.argv) != 3:
+        print('Usage: python compare_results.py <dir> <deepfakes>[y|n]\n'
+              '<dir> = Directory containing subdirectories with files to compare.\n'
+              '<deepfakes> = Set to "y" or "yes" if you want to compare deepfakes, otherwise compares reference files.',
+              file=sys.stderr)
         exit(1)
     path = sys.argv[1]
     json_dirs = glob.glob(os.path.join(path, '*/json'))
+    deepfake = sys.argv[2]
     if not json_dirs:
         create_json_directories(path)
-    pattern_obscure = os.path.join(path, '*/*_obscure_result.jpg')
-    pattern_glasses = os.path.join(path, '*/*_glasses_result.jpg')
-    pattern_hair = os.path.join(path, '*/*_hair_result.jpg')
-    pattern_ref = os.path.join(path, '*/*_ref_result.jpg')
+    if deepfake.lower() == 'y' or deepfake.lower() == 'yes':
+        # Comparing deepfakes
+        pattern_obscure = os.path.join(path, '*/*_obscure_result.jpg')
+        pattern_glasses = os.path.join(path, '*/*_glasses_result.jpg')
+        pattern_hair = os.path.join(path, '*/*_hair_result.jpg')
+        pattern_ref = os.path.join(path, '*/*_ref_result.jpg')
 
-    matching_files_obscure = glob.glob(pattern_obscure)
-    matching_files_glasses = glob.glob(pattern_glasses)
-    matching_files_hair = glob.glob(pattern_hair)
-    matching_files_ref = glob.glob(pattern_ref)
+        matching_files_obscure = glob.glob(pattern_obscure)
+        matching_files_glasses = glob.glob(pattern_glasses)
+        matching_files_hair = glob.glob(pattern_hair)
+        matching_files_ref = glob.glob(pattern_ref)
 
-    files = matching_files_obscure + matching_files_glasses + matching_files_hair + matching_files_ref
+        files = matching_files_obscure + matching_files_glasses + matching_files_hair + matching_files_ref
+    else:
+        # Comparing references
+        pattern_obscure = os.path.join(path, '*/*_obscure.jpg')
+        pattern_glasses = os.path.join(path, '*/*_glasses.jpg')
+        pattern_hair = os.path.join(path, '*/*_hair.jpg')
+
+        matching_files_obscure = glob.glob(pattern_obscure)
+        matching_files_glasses = glob.glob(pattern_glasses)
+        matching_files_hair = glob.glob(pattern_hair)
+
+        files = matching_files_obscure + matching_files_glasses + matching_files_hair
 
     refs = glob.glob(os.path.join(path, '*/*_ref.jpg'))
     results = []
