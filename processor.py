@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 def find_target_image(target_folder):
-    # Finding the target image with '_border.jpg' suffix
+    # Find the target image with '_border.jpg' suffix
     for file in os.listdir(target_folder):
         if file.endswith('_border.jpg'):
             return os.path.join(target_folder, file)
@@ -26,7 +26,7 @@ def process_images_in_folder(folder):
                     source_image_path = os.path.join(subdir_path, file)
                     result_image_path = os.path.join(subdir_path, file.replace('_border.jpg', '_result.jpg'))
 
-                    # Constructing and running the command
+                    # Constructing command and running FaceFusion
                     command = [
                         'python', 'run.py', 
                         '-s', source_image_path, 
