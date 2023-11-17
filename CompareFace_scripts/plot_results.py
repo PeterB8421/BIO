@@ -8,6 +8,13 @@ import pandas as pd
 import seaborn as sns
 
 
+def get_category(filename : str):
+    cat = filename.split('_')[2]
+    if cat == 'ref.jpg':
+        cat = 'cross'
+    return cat.replace('.jpg', '')
+
+
 def main():
     # sys.argv [0] = Script pathname, [1] = path, [2] = output filename, [3] = graph title
     if len(sys.argv) != 4:
@@ -18,6 +25,7 @@ def main():
         exit(1)
     path = sys.argv[1]
     results_json = glob.glob(os.path.join(path, '*/json/*.json'))
+    results_json += glob.glob(os.path.join(path, '*/cross*.json'))
     dfs = []
     for file in results_json:
         with open(file, 'r') as f:
@@ -27,14 +35,18 @@ def main():
                     'src'       : item['src'],
                     'target'    : item['target'],
                     'similarity': item['result'][0]['face_matches'][0]['similarity'],
-                    'category': os.path.basename(item['target']).split('_')[2].replace('.jpg', '').lower()
+                    'category': get_category(os.path.basename(item['target']))
                 }
                 for item in data
             ]
             df = pd.DataFrame(result_data)
             dfs.append(df)
     result_df = pd.concat(dfs, ignore_index=True)
-    sns.boxplot(result_df, x='category', y='similarity')
+    if (result_df['target'].str.contains('_result.jpg')).any():
+        cols = ['obscure', 'glasses', 'hair', 'ref', 'cross']
+    else:
+        cols = ['obscure', 'glasses', 'hair', 'cross']
+    sns.boxplot(result_df, x='category', y='similarity', order=cols)
     plt.ylim(bottom=0)
     plt.gca().set_title(sys.argv[3])
     plt.savefig(sys.argv[2])

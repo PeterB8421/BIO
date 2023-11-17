@@ -14,18 +14,47 @@
         "face_matches": [
           {
             "box": {
-              "probability": 0.99992,
-              "x_max": 929,
-              "y_max": 1006,
-              "x_min": 131,
-              "y_min": 155
+              "probability": 0.9999,
+              "x_max": 1117,
+              "y_max": 1253,
+              "x_min": 356,
+              "y_min": 353
             },
-            "similarity": 0.95677
+            "similarity": 0.94717
           }
         ]
       }
     ],
-    "src": "..\\selection\\men\\3119\\3119_02_ref.jpg",
-    "target": "..\\selection\\men\\3119\\3119_12_hair.jpg"
+    "src": "selection\\men\\3119\\3119_02_ref.jpg",
+    "target": "selection\\men\\3119\\3119_12_hair_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 1.0,
+            "x_max": 888,
+            "y_max": 985,
+            "x_min": 92,
+            "y_min": 99
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99993,
+              "x_max": 1150,
+              "y_max": 1244,
+              "x_min": 318,
+              "y_min": 314
+            },
+            "similarity": 0.99623
+          }
+        ]
+      }
+    ],
+    "src": "selection\\men\\3119\\3119_02_ref.jpg",
+    "target": "selection\\men\\3119\\3119_02_ref_result.jpg"
   }
 ]

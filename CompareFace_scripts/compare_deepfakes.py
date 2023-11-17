@@ -3,13 +3,14 @@ import os.path
 import sys
 import glob
 import re
+import platform
 
 from compreface import CompreFace
 from compreface.service import VerificationService
 
 DOMAIN: str = 'http://localhost'
 PORT: str = '8000'
-API_KEY: str = 'dabc631b-38a9-435a-b75a-e3b7340ebfb4'
+API_KEY: str = '814d9acc-aa5a-493d-9134-c33390e8e58b'
 
 compre_face: CompreFace = CompreFace(DOMAIN, PORT)
 
@@ -63,12 +64,18 @@ def main():
     refs = glob.glob(os.path.join(path, '*/*_ref.jpg'))
     results = []
     for src in refs:
-        prefix = re.search(r'\\(\d+)\\', src)
+        if platform.system() == 'Windows':
+            prefix = re.search(r'\\(\d+)\\', src)
+        else:
+            prefix = re.search(r'\/(\d+)\/', src)
         prefix = prefix.group(1)
         for target in files:
             if target == src:
                 continue
-            target_prefix = re.search(r'\\(\d+)\\', target)
+            if platform.system() == 'Windows':
+                target_prefix = re.search(r'\\(\d+)\\', target)
+            else:
+                target_prefix = re.search(r'\/(\d+)\/', target)
             target_prefix = target_prefix.group(1)
             if prefix != target_prefix:
                 continue
@@ -78,6 +85,32 @@ def main():
             results.append(current)
         filename = os.path.basename(src)
         json_path = os.path.join(path, prefix, 'json', f'{filename.replace(".jpg", ".json")}')
+        with open(json_path, 'w') as json_file:
+            json.dump(results, json_file, indent=2)
+        results = []
+
+    for src in refs:
+        if platform.system() == 'Windows':
+            prefix = re.search(r'\\(\d+)\\', src)
+        else:
+            prefix = re.search(r'\/(\d+)\/', src)
+        prefix = prefix.group(1)
+        for target in refs:
+            if target == src:
+                continue
+            if platform.system() == 'Windows':
+                target_prefix = re.search(r'\\(\d+)\\', target)
+            else:
+                target_prefix = re.search(r'\/(\d+)\/', target)
+            target_prefix = target_prefix.group(1)
+            if prefix == target_prefix:
+                continue
+            current = verify.verify(src, target)
+            current['src'] = src
+            current['target'] = target
+            results.append(current)
+        filename = os.path.basename(src)
+        json_path = os.path.join(path, prefix, 'json', f'cross_{filename.replace(".jpg", ".json")}')
         with open(json_path, 'w') as json_file:
             json.dump(results, json_file, indent=2)
         results = []

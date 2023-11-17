@@ -14,19 +14,19 @@
         "face_matches": [
           {
             "box": {
-              "probability": 0.99864,
-              "x_max": 915,
-              "y_max": 993,
-              "x_min": 177,
-              "y_min": 171
+              "probability": 0.99995,
+              "x_max": 1106,
+              "y_max": 1260,
+              "x_min": 339,
+              "y_min": 332
             },
-            "similarity": 0.7404
+            "similarity": 0.93499
           }
         ]
       }
     ],
-    "src": "..\\selection\\men\\2670\\2670_01_ref.jpg",
-    "target": "..\\selection\\men\\2670\\2670_02_obscure.jpg"
+    "src": "selection\\men\\2670\\2670_01_ref.jpg",
+    "target": "selection\\men\\2670\\2670_02_obscure_result.jpg"
   },
   {
     "result": [
@@ -43,18 +43,47 @@
         "face_matches": [
           {
             "box": {
-              "probability": 0.99988,
-              "x_max": 854,
-              "y_max": 1019,
-              "x_min": 105,
-              "y_min": 121
+              "probability": 0.9999,
+              "x_max": 1101,
+              "y_max": 1256,
+              "x_min": 344,
+              "y_min": 328
             },
-            "similarity": 0.90502
+            "similarity": 0.95732
           }
         ]
       }
     ],
-    "src": "..\\selection\\men\\2670\\2670_01_ref.jpg",
-    "target": "..\\selection\\men\\2670\\2670_05_hair.jpg"
+    "src": "selection\\men\\2670\\2670_01_ref.jpg",
+    "target": "selection\\men\\2670\\2670_05_hair_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99888,
+            "x_max": 888,
+            "y_max": 1022,
+            "x_min": 116,
+            "y_min": 182
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99997,
+              "x_max": 1106,
+              "y_max": 1260,
+              "x_min": 342,
+              "y_min": 302
+            },
+            "similarity": 0.97528
+          }
+        ]
+      }
+    ],
+    "src": "selection\\men\\2670\\2670_01_ref.jpg",
+    "target": "selection\\men\\2670\\2670_01_ref_result.jpg"
   }
 ]

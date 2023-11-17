@@ -14,18 +14,47 @@
         "face_matches": [
           {
             "box": {
-              "probability": 0.99997,
-              "x_max": 894,
-              "y_max": 995,
-              "x_min": 118,
-              "y_min": 126
+              "probability": 0.99979,
+              "x_max": 1122,
+              "y_max": 1244,
+              "x_min": 332,
+              "y_min": 337
             },
-            "similarity": 0.99903
+            "similarity": 0.9475
           }
         ]
       }
     ],
-    "src": "..\\selection\\men\\3208\\3208_01_ref.jpg",
-    "target": "..\\selection\\men\\3208\\3208_05_glasses.jpg"
+    "src": "selection\\men\\3208\\3208_01_ref.jpg",
+    "target": "selection\\men\\3208\\3208_05_glasses_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99892,
+            "x_max": 907,
+            "y_max": 1000,
+            "x_min": 112,
+            "y_min": 116
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99994,
+              "x_max": 1129,
+              "y_max": 1239,
+              "x_min": 321,
+              "y_min": 337
+            },
+            "similarity": 0.94888
+          }
+        ]
+      }
+    ],
+    "src": "selection\\men\\3208\\3208_01_ref.jpg",
+    "target": "selection\\men\\3208\\3208_01_ref_result.jpg"
   }
 ]
