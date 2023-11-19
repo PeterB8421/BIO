@@ -25,8 +25,8 @@
         ]
       }
     ],
-    "src": "selection\\men\\2706\\2706_02_ref.jpg",
-    "target": "selection\\men\\2706\\2706_01_obscure_result.jpg"
+    "src": "..\\selection\\men\\2706\\2706_02_ref.jpg",
+    "target": "..\\selection\\men\\2706\\2706_01_obscure_result.jpg"
   },
   {
     "result": [
@@ -54,7 +54,7 @@
         ]
       }
     ],
-    "src": "selection\\men\\2706\\2706_02_ref.jpg",
-    "target": "selection\\men\\2706\\2706_02_ref_result.jpg"
+    "src": "..\\selection\\men\\2706\\2706_02_ref.jpg",
+    "target": "..\\selection\\men\\2706\\2706_02_ref_result.jpg"
   }
 ]

@@ -25,7 +25,7 @@
         ]
       }
     ],
-    "src": "selection\\men\\3193\\3193_07_ref.jpg",
-    "target": "selection\\men\\3193\\3193_07_ref_result.jpg"
+    "src": "..\\selection\\men\\3193\\3193_07_ref.jpg",
+    "target": "..\\selection\\men\\3193\\3193_07_ref_result.jpg"
   }
 ]

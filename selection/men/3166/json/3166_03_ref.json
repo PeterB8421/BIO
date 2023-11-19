@@ -25,8 +25,8 @@
         ]
       }
     ],
-    "src": "selection\\men\\3166\\3166_03_ref.jpg",
-    "target": "selection\\men\\3166\\3166_04_glasses_result.jpg"
+    "src": "..\\selection\\men\\3166\\3166_03_ref.jpg",
+    "target": "..\\selection\\men\\3166\\3166_04_glasses_result.jpg"
   },
   {
     "result": [
@@ -54,7 +54,7 @@
         ]
       }
     ],
-    "src": "selection\\men\\3166\\3166_03_ref.jpg",
-    "target": "selection\\men\\3166\\3166_03_ref_result.jpg"
+    "src": "..\\selection\\men\\3166\\3166_03_ref.jpg",
+    "target": "..\\selection\\men\\3166\\3166_03_ref_result.jpg"
   }
 ]

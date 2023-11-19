@@ -10,7 +10,7 @@ from compreface.service import VerificationService
 
 DOMAIN: str = 'http://localhost'
 PORT: str = '8000'
-API_KEY: str = '814d9acc-aa5a-493d-9134-c33390e8e58b'
+API_KEY: str = 'dabc631b-38a9-435a-b75a-e3b7340ebfb4'
 
 compre_face: CompreFace = CompreFace(DOMAIN, PORT)
 

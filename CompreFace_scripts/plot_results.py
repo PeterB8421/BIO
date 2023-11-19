@@ -42,6 +42,7 @@ def main():
             df = pd.DataFrame(result_data)
             dfs.append(df)
     result_df = pd.concat(dfs, ignore_index=True)
+    # result_df.to_csv('results_women_deepfakes.csv')
     if (result_df['target'].str.contains('_result.jpg')).any():
         cols = ['obscure', 'glasses', 'hair', 'ref']
         result_df = result_df[result_df['category'] != 'cross']
