@@ -1,0 +1,89 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99979,
+            "x_max": 920,
+            "y_max": 1024,
+            "x_min": 128,
+            "y_min": 147
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99999,
+              "x_max": 1127,
+              "y_max": 1244,
+              "x_min": 339,
+              "y_min": 325
+            },
+            "similarity": 0.60721
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\3240\\3240_05_ref.jpg",
+    "target": "..\\selection\\men\\3240\\3240_01_glasses_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99979,
+            "x_max": 920,
+            "y_max": 1024,
+            "x_min": 128,
+            "y_min": 147
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99997,
+              "x_max": 1110,
+              "y_max": 1253,
+              "x_min": 339,
+              "y_min": 325
+            },
+            "similarity": 0.90115
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\3240\\3240_05_ref.jpg",
+    "target": "..\\selection\\men\\3240\\3240_08_glasses_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99979,
+            "x_max": 920,
+            "y_max": 1024,
+            "x_min": 128,
+            "y_min": 147
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99996,
+              "x_max": 1115,
+              "y_max": 1263,
+              "x_min": 325,
+              "y_min": 328
+            },
+            "similarity": 0.99458
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\3240\\3240_05_ref.jpg",
+    "target": "..\\selection\\men\\3240\\3240_05_ref_result.jpg"
+  }
+]

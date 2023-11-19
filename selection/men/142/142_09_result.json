@@ -1,0 +1,75 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99879,
+            "x_max": 1155,
+            "y_max": 1242,
+            "x_min": 365,
+            "y_min": 356
+          },
+          "landmarks": [
+            [
+              616,
+              721
+            ],
+            [
+              878,
+              719
+            ],
+            [
+              742,
+              857
+            ],
+            [
+              642,
+              1003
+            ],
+            [
+              855,
+              996
+            ]
+          ]
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99805,
+              "x_max": 1153,
+              "y_max": 1239,
+              "x_min": 372,
+              "y_min": 321
+            },
+            "landmarks": [
+              [
+                623,
+                717
+              ],
+              [
+                881,
+                712
+              ],
+              [
+                742,
+                864
+              ],
+              [
+                646,
+                998
+              ],
+              [
+                860,
+                993
+              ]
+            ],
+            "similarity": 0.9995
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\142\\142_09_result.jpg",
+    "target": "..\\selection\\men\\142\\142_10_result.jpg"
+  }
+]

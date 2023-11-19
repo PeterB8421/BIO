@@ -1,0 +1,60 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99962,
+            "x_max": 830,
+            "y_max": 1024,
+            "x_min": 56,
+            "y_min": 57
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99995,
+              "x_max": 1132,
+              "y_max": 1244,
+              "x_min": 342,
+              "y_min": 325
+            },
+            "similarity": 0.79507
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\1337\\1337_01_ref.jpg",
+    "target": "..\\selection\\men\\1337\\1337_06_obscure_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99962,
+            "x_max": 830,
+            "y_max": 1024,
+            "x_min": 56,
+            "y_min": 57
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99981,
+              "x_max": 1125,
+              "y_max": 1258,
+              "x_min": 311,
+              "y_min": 302
+            },
+            "similarity": 0.96848
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\1337\\1337_01_ref.jpg",
+    "target": "..\\selection\\men\\1337\\1337_01_ref_result.jpg"
+  }
+]

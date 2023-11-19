@@ -1,0 +1,89 @@
+[
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99972,
+            "x_max": 900,
+            "y_max": 1001,
+            "x_min": 120,
+            "y_min": 92
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99998,
+              "x_max": 1108,
+              "y_max": 1260,
+              "x_min": 325,
+              "y_min": 304
+            },
+            "similarity": 0.82129
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\2926\\2926_05_ref.jpg",
+    "target": "..\\selection\\men\\2926\\2926_02_obscure_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99972,
+            "x_max": 900,
+            "y_max": 1001,
+            "x_min": 120,
+            "y_min": 92
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99984,
+              "x_max": 1099,
+              "y_max": 1275,
+              "x_min": 349,
+              "y_min": 346
+            },
+            "similarity": 0.88454
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\2926\\2926_05_ref.jpg",
+    "target": "..\\selection\\men\\2926\\2926_04_glasses_result.jpg"
+  },
+  {
+    "result": [
+      {
+        "source_image_face": {
+          "box": {
+            "probability": 0.99972,
+            "x_max": 900,
+            "y_max": 1001,
+            "x_min": 120,
+            "y_min": 92
+          }
+        },
+        "face_matches": [
+          {
+            "box": {
+              "probability": 0.99995,
+              "x_max": 1117,
+              "y_max": 1246,
+              "x_min": 335,
+              "y_min": 304
+            },
+            "similarity": 0.99552
+          }
+        ]
+      }
+    ],
+    "src": "..\\selection\\men\\2926\\2926_05_ref.jpg",
+    "target": "..\\selection\\men\\2926\\2926_05_ref_result.jpg"
+  }
+]
