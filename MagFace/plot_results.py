@@ -42,7 +42,8 @@ def main():
             dfs.append(df)
     result_df = pd.concat(dfs, ignore_index=True)
     if (result_df['target'].str.contains('_result.jpg')).any():
-        cols = ['obscure', 'glasses', 'hair', 'ref', 'cross']
+        cols = ['obscure', 'glasses', 'hair', 'ref']
+        result_df = result_df[result_df['category'] != 'cross']
     else:
         cols = ['obscure', 'glasses', 'hair', 'cross']
     sns.boxplot(result_df, x='category', y='distance', order=cols)
